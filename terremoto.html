@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terremotos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <header>
+       <img src="logo.png" alt="Menu Icon" class="menuicon" onclick="toggleMenu()">
+       <p class="textonav" style= "font-family: 'Comfortaa', sans-serif">Sismologist</p>
+        <nav id="menu"  class="hidden">
+            <ul>
+                <li><a href="index.html"  class="transition-link">Página Principal</a></li>
+                <li><a href="importancia.html"  class="transition-link">Importancia Geológica</a></li>
+                <li><a href="terremoto.html"  class="transition-link">Terremotos</a></li>
+                <li><a href="EDA.html"  class="transition-link">EDA</a></li>
+                <li><a href="metodosns.html"  class="transition-link">Métodos No Supervisados</a></li>
+                <li><a href="metodoss.html"  class="transition-link">Métodos Supervisados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="transition-overlay">
+            <img src="Class.gif" alt="Transición" class="transition-gif">
+        </div>
+        <section class="banner2">
+            <div class="bannertext4">
+                <h1>Sobre los Terremotos</h1>
+            </div>
+        </section>
+        <section class="bodyt-2">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="container1">
+                                <img src="terremotozip/pres.png" alt="" class="press">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-text">
+                                <h1>Sismo</h1>
+                                <p>“Movimiento brusco” de la corteza terrestre causado por la liberación de energía acumulada en la litosfera que crea ondas sísmicas. </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-2">Más información</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="terremotozip/terr1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-text">
+                                <div class="slider-img2">
+                                    <img src="terremotozip/terr2.png" alt="img2">
+                                </div>
+                                <div class="botones">
+                                    <a href="#" class="btn-3">Consultar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-text">
+                                <div class="aligne3">
+                                    <h1 class="titulo3">Magnitud</h1>
+                                    <p class="textop3">Escala de Richter Escala logarítmica que cuantifica la fuerza de los sismos según la cantidad de  energía liberada durante el sismo en cuestión.</p>
+                                    <div class="botones">
+                                        <a href="#" class="btn-2">Revisar Reporte</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="terremotozip/terr32.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="bodyt">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="paddingpara"><h1>Origen y Causas</h1></div>
+                    <div class="swiper-slide1">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="propo/1p.png" alt="">  
+                            </div>
+                        </div>
+                        <a href="#" class="btn-1">Ver más</a>
+                    </div>
+
+                    <div class="swiper-slide1">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="propo/2p.png" alt="">  
+                            </div>
+                        </div>
+                        <a href="#" class="btn-1">Ver más</a>
+                    </div>
+
+                    <div class="swiper-slide1">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="propo/3p.png" alt="">  
+                            </div>
+                        </div>
+                        <a href="#" class="btn-1">Ver más</a>
+                    </div>
+
+                    <div class="swiper-slide1">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="propo/4p.png" alt="">  
+                            </div>
+                        </div>
+                        <a href="#" class="btn-1">Ver más</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-column">
+            <h3>Grupo 1</h3>
+        </div>
+        <div class="footer-column">
+            <h3>Diplomado CIencia de Datos UPTC</h3>
+        </div>
+    </footer>
+ <script>
+        var swiper2 = new Swiper(".mySwiper-1",{
+    effect:"coverflow",
+    grabCursor: true,
+    centeredslides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+        depth:500,
+        modifer:1,
+        slidesShadows:true,
+        rotate:0,
+        stretch:0,
+    }
+});
+ </script>
+ <script>
+var swiper1 = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop:true,
+    pagination:{
+        el:".swiper-pagination",
+        clickable: true,
+    },
+    navigation:{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+ </script>
+</html>

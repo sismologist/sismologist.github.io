@@ -1,0 +1,82 @@
+.bodyt {
+    background-color: #f7c1ef;
+    font-family:"Hanken Grotesk", sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.swiper {
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+.swiper-slide {
+    width: 1270px;
+    height: 350px;
+    background-color: #c090bc;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    margin: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons img{
+    width: 120px;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: justify;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.product-txt span{
+    font-size: 25px;
+    color: #7c3f05;
+    font-weight: bold;
+}
+
+.product-txt h3 {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 10%;
+}
+
+.product-txt p{
+    font-size: 25px;
+    color: #560061;
+    padding-left: 20%;
+}
+
+.text111{
+    font-size: 25px;
+}
+
+.product-img { 
+    flex-basis: 50%;
+    text-align: right;
+    margin: 20px;
+}
+
+.product-img img{
+    width: 600px;
+    height: auto;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #7c3f05;
+    border-radius: 25px;
+    color:#7c3f05;
+    text-decoration: none;
+    margin-top: 20px;
+    align-items: center;
+}

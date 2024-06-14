@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .contar{
+            background-color: #02040A;
+        }
+        .dropdown-container {
+            position: relative;
+            align-items: center;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 30%;
+        }
+
+        .dropdown-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .dropdown-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .dropdown-header h2 {
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            border-top: 1px solid #ddd;
+        }
+
+        .dropdown-content a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .dropdown-container {
+                width: 90%;
+            }
+
+            .dropdown-header img {
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+            }
+
+            .dropdown-header h2 {
+                font-size: 18px;
+            }
+
+            .dropdown-content a {
+                padding: 10px 15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <header>
+       <img src="logo.png" alt="Menu Icon" class="menuicon" onclick="toggleMenu()">
+       <p class="textonav" style= "font-family: 'Bricolage Grotesque', sans-serif">Sismologist</p>
+        <nav id="menu"  class="hidden">
+            <ul>
+                <li><a href="index.html"  class="transition-link">Página Principal</a></li>
+                <li><a href="importancia.html"  class="transition-link">Importancia Geológica</a></li>
+                <li><a href="terremoto.html"  class="transition-link">Terremotos</a></li>
+                <li><a href="EDA.html"  class="transition-link">EDA</a></li>
+                <li><a href="metodosns.html"  class="transition-link">Métodos No Supervisados</a></li>
+                <li><a href="metodoss.html"  class="transition-link">Métodos Supervisados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="transition-overlay">
+            <img src="Class.gif" alt="Transición" class="transition-gif">
+        </div>
+        <section class="banner3">
+            <div class="bannertext3">
+                <h1>Análisis Exploratorio <br>de Datos</h1>
+            </div>
+        </section>
+        <section class="contar">
+        <div class="dropdown-container" onclick="toggleDropdown()">
+            <div class="dropdown-header">
+                <img src="e3.png" alt="Profile Picture">
+                <h2>Seleccionar vista</h2>
+            </div>
+            <div class="dropdown-content" id="dropdownContent">
+                <ul>
+                <a target="iframe1" href="https://concepto.de/proyecto/">Análisis de Datos</a>
+                <a target="iframe1" href="https://nbviewer.org/github/Ann821973/sisnbviwer/blob/main/Regresion_Sismos3.ipynb/">Regresión</a>
+                </ul>    
+            </div>
+        </div>
+        </section>
+        
+        <script>
+            function toggleDropdown() {
+                var dropdownContent = document.getElementById("dropdownContent");
+                if (dropdownContent.style.display === "flex") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "flex";
+                }
+            }
+        
+            // Cerrar el menú si se hace clic fuera del mismo
+            window.onclick = function(event) {
+                if (!event.target.closest('.dropdown-container')) {
+                    document.getElementById("dropdownContent").style.display = "none";
+                }
+            }
+        </script>
+        <section class="frame">
+            <div class="chart">
+                <iframe name="iframe1"
+                    src="https://nbviewer.org/github/JuanDiego360/Proyecto_de_sismologia/blob/main/proyecto_sismologia.ipynb"
+                    width="100%" height="500px" frameborder="0"></iframe>
+            </div>
+            <section class="cont_button">
+                <a href="https://github.com/JuanDiego360/Proyecto_de_sismologia" target="_blank">
+                    <img src="github.png" alt="Github" class="gobutton">
+                </a>
+            </section>
+        </section>
+        <section class="bodyt">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+        
+                    <div class="swiper-slide">
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <h3>Tenemos un dataset de</h3>
+                                <p>
+                                    26409 datos de 1962 hasta el 2016
+                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="tec.jpg" alt="">  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <h3>El tipo de datos</h3>
+                                <p>
+                                    Es variable, se tiene datos cualitativos y cuantitativos, de carater ordinal y cardinal.
+                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="Estadistica-1.jpg" alt="">  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <h3>Podemos considerar que</h3>
+                                <p>
+                                    Las variables que más información nos brindan son la distancia del epicentro a la falla y la profundidad
+                                </p>
+                            </div>
+                            <div class="product-img">
+                                <img src="perdidos.jpg" alt="">  
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            var swiper2 = new Swiper(".mySwiper-1",{
+        effect:"coverflow",
+        grabCursor: true,
+        centeredslides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            depth:500,
+            modifer:1,
+            slidesShadows:true,
+            rotate:0,
+            stretch:0,
+        }
+        });
+        </script>
+    </main>
+    <footer>
+        <div class="footer-column">
+            <h3>Grupo 1</h3>
+        </div>
+        <div class="footer-column">
+            <h3>Diplomado CIencia de Datos UPTC</h3>
+        </div>
+    </footer>
+
+</html>

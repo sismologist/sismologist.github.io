@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <header>
+       <img src="logo.png" alt="Menu Icon" class="menuicon" onclick="toggleMenu()">
+       <p class="textonav" style= "font-family: 'Comfortaa', sans-serif">Sismologist</p>
+        <nav id="menu"  class="hidden">
+            <ul>
+                <li><a href="index.html"  class="transition-link">Página Principal</a></li>
+                <li><a href="importancia.html"  class="transition-link">Importancia Geológica</a></li>
+                <li><a href="terremoto.html"  class="transition-link">Terremotos</a></li>
+                <li><a href="EDA.html"  class="transition-link">EDA</a></li>
+                <li><a href="metodosns.html"  class="transition-link">Métodos No Supervisados</a></li>
+                <li><a href="metodoss.html"  class="transition-link">Métodos Supervisados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="transition-overlay">
+            <img src="Class.gif" alt="Transición" class="transition-gif">
+        </div>
+        <section class="banner5">
+            <div class="bannertext2">
+                <h1>Métodos Supervisados</h1>
+            </div>
+        </section>
+        <section class="frame">
+            <div class="chart">
+                <iframe name="iframe1"
+                    src="https://www.smartick.es/blog/matematicas/probabilidad-y-estadistica/probabilidad-que-es/"
+                    width="100%" height="550px" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section class="cont_button">
+            <a href="https://github.com/JuanDiego360/Proyecto_de_sismologia" target="_blank">
+                <img src="github.png" alt="Github" class="gobutton">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-column">
+            <h3>Grupo 1</h3>
+        </div>
+        <div class="footer-column">
+            <h3>Diplomado CIencia de Datos UPTC</h3>
+        </div>
+    </footer>
+
+</html>

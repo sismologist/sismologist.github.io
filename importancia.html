@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EDA</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script defer src="script.js"></script>
+    
+        <header>
+           <img src="logo.png" alt="Menu Icon" class="menuicon" onclick="toggleMenu()">
+           <p class="textonav" style= "font-family: 'Quantico', sans-serif">Sismologist</p>
+        <nav id="menu"  class="hidden">
+            <ul>
+                <li><a href="index.html"  class="transition-link">Página Principal</a></li>
+                <li><a href="importancia.html"  class="transition-link">Importancia Geológica</a></li>
+                <li><a href="terremoto.html"  class="transition-link">Terremotos</a></li>
+                <li><a href="EDA.html"  class="transition-link">EDA</a></li>
+                <li><a href="metodosns.html"  class="transition-link">Métodos No Supervisados</a></li>
+                <li><a href="metodoss.html"  class="transition-link">Métodos Supervisados</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div id="transition-overlay">
+            <img src="Class.gif" alt="Transición" class="transition-gif">
+        </div>
+        <section class="banner">
+            <div class="bannertext">
+                <h1>Importancia Geológica</h1>
+            </div>
+        </section>
+        <section class="text_11">
+            <div class="fondotexto">
+                <h1>Nos Preguntamos</h1>
+                <div class="alineartexto1.1">
+                    <p>¿Qué caracteristicas permiten establecer los patrones con que se producen un sismos en un periodo determinado de tiempo?<br> <br>¿A qué distancia podemos predecir un sismo de las fallas geológicas?</p>
+                </div>
+            </div>
+            <img class="img1" src="plim-unscreen.gif" alt="img1">
+        </section>
+        <section class="text_12">
+                <h1>Nos planteamos</h1>
+                <p> <br> La respuesta a esta pregunta requiere la integración de diferentes métodos de análisis de datos, incluyendo técnicas de aprendizaje automático y estadística.
+                    Es fundamental considerar la calidad y precisión de los datos de sismos para obtener resultados confiables.
+                    <br> La comunicación efectiva de los resultados del análisis a la comunidad y a las autoridades es crucial para la toma de decisiones informadas y la implementación de medidas de mitigación efectivas.
+                    Espero que esta síntesis te sea útil para enfocar tu proyecto de análisis de datos de sismos en un objetivo estratégico y relevante.</p>  
+        </section>
+        <section class="frame">
+            <div class="text_1.3">
+                <h1>Desarrollamos</h1>
+            </div>
+            <div class="chart">
+                <iframe src="https://nbviewer.org/github/Ann821973/map1/blob/main/mapa.ipynb" width="100%" height="550px" frameborder="0"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-column">
+                <h3>Grupo 1</h3>
+            </div>
+            <div class="footer-column">
+                <h3>Diplomado CIencia de Datos UPTC</h3>
+            </div>
+        </footer>
+</body>
+</html>
